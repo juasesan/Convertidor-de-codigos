@@ -1,0 +1,38 @@
+library IEEE;
+ use IEEE.STD_LOGIC_1164.all;
+ use IEEE.STD_LOGIC_signed.all;
+ 
+ENTITY f3 IS
+ PORT (a : IN std_logic_vector(3 DOWNTO 0); 
+salida: out std_logic_vector(3 DOWNTO 0));
+END f3;
+
+ ARCHITECTURE sol OF f3 IS
+ signal compared: std_logic;
+ signal sum: std_logic;
+ 
+ component comparador
+ PORT ( A,N: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    igual,mayor,menor: OUT std_logic);
+END component;
+
+component SUM
+PORT (a : IN std_logic_vector(3 DOWNTO 0);
+ b : IN std_logic_vector(3 DOWNTO 0); 
+ salida : OUT std_logic_vector(3 DOWNTO 0);
+cout: out std_logic);
+END component;
+
+component MUX_2a1
+ PORT (e : IN std_logic;
+ a : IN std_logic_vector(3 DOWNTO 0); 
+ b : IN std_logic_vector(3 DOWNTO 0);
+salida: out std_logic_vector(3 DOWNTO 0));
+END component;
+ 
+ BEGIN
+salida(3)<= a(3) XOR '0';
+salida(2)<= a(2) XOR a(3);
+salida(1)<= a(1) XOR a(2);
+salida(0)<= a(0) XOR a(1);
+ END sol;

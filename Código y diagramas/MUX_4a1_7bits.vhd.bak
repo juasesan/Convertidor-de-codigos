@@ -1,0 +1,18 @@
+library IEEE;
+ use IEEE.STD_LOGIC_1164.all;
+ use IEEE.STD_LOGIC_signed.all;
+ 
+ENTITY MUX_4a1_7bits IS
+ PORT (R, S: IN std_logic;
+ a, b, c, d : IN std_logic_vector(6 DOWNTO 0); 
+salida: out std_logic_vector(6 DOWNTO 0));
+END mux_4a1_7bits;
+
+ ARCHITECTURE sol OF MUX_4a1_7bits IS
+ BEGIN
+ with R&S select
+ salida<= a when '0'AND'0',
+			 b when '0'AND'1',
+			 c when '1'AND'0',
+			 d when '1'AND'1';
+ END sol;

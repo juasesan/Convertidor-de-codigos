@@ -1,0 +1,351 @@
+$comment
+	File created using the following command:
+		vcd file ProyectoDigitales_G3.msim.vcd -direction
+$end
+$date
+	Thu Sep 10 17:43:02 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module circuito_vhd_vec_tst $end
+$var wire 1 ! A [3] $end
+$var wire 1 " A [2] $end
+$var wire 1 # A [1] $end
+$var wire 1 $ A [0] $end
+$var wire 1 % B [3] $end
+$var wire 1 & B [2] $end
+$var wire 1 ' B [1] $end
+$var wire 1 ( B [0] $end
+$var wire 1 ) RS [1] $end
+$var wire 1 * RS [0] $end
+$var wire 1 + S [7] $end
+$var wire 1 , S [6] $end
+$var wire 1 - S [5] $end
+$var wire 1 . S [4] $end
+$var wire 1 / S [3] $end
+$var wire 1 0 S [2] $end
+$var wire 1 1 S [1] $end
+$var wire 1 2 S [0] $end
+
+$scope module i1 $end
+$var wire 1 3 gnd $end
+$var wire 1 4 vcc $end
+$var wire 1 5 unknown $end
+$var wire 1 6 devoe $end
+$var wire 1 7 devclrn $end
+$var wire 1 8 devpor $end
+$var wire 1 9 ww_devoe $end
+$var wire 1 : ww_devclrn $end
+$var wire 1 ; ww_devpor $end
+$var wire 1 < ww_S [7] $end
+$var wire 1 = ww_S [6] $end
+$var wire 1 > ww_S [5] $end
+$var wire 1 ? ww_S [4] $end
+$var wire 1 @ ww_S [3] $end
+$var wire 1 A ww_S [2] $end
+$var wire 1 B ww_S [1] $end
+$var wire 1 C ww_S [0] $end
+$var wire 1 D ww_A [3] $end
+$var wire 1 E ww_A [2] $end
+$var wire 1 F ww_A [1] $end
+$var wire 1 G ww_A [0] $end
+$var wire 1 H ww_B [3] $end
+$var wire 1 I ww_B [2] $end
+$var wire 1 J ww_B [1] $end
+$var wire 1 K ww_B [0] $end
+$var wire 1 L ww_RS [1] $end
+$var wire 1 M ww_RS [0] $end
+$var wire 1 N \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 O \A[3]~input_o\ $end
+$var wire 1 P \A[1]~input_o\ $end
+$var wire 1 Q \A[2]~input_o\ $end
+$var wire 1 R \inst10|salida[4]~0_combout\ $end
+$var wire 1 S \RS[0]~input_o\ $end
+$var wire 1 T \RS[1]~input_o\ $end
+$var wire 1 U \inst9|Mux1~0_combout\ $end
+$var wire 1 V \inst9|Mux2~0_combout\ $end
+$var wire 1 W \B[3]~input_o\ $end
+$var wire 1 X \B[2]~input_o\ $end
+$var wire 1 Y \B[1]~input_o\ $end
+$var wire 1 Z \A[0]~input_o\ $end
+$var wire 1 [ \B[0]~input_o\ $end
+$var wire 1 \ \inst12|Add0~18\ $end
+$var wire 1 ] \inst12|Add0~14\ $end
+$var wire 1 ^ \inst12|Add0~10\ $end
+$var wire 1 _ \inst12|Add0~6\ $end
+$var wire 1 ` \inst12|Add0~1_sumout\ $end
+$var wire 1 a \inst12|Add0~17_sumout\ $end
+$var wire 1 b \inst28|sub|88~0_combout\ $end
+$var wire 1 c \inst28|sub|84~combout\ $end
+$var wire 1 d \inst30|31~0_combout\ $end
+$var wire 1 e \inst15|U1|LessThan0~0_combout\ $end
+$var wire 1 f \inst9|Mux3~0_combout\ $end
+$var wire 1 g \inst5|Add0~0_combout\ $end
+$var wire 1 h \inst9|Mux4~0_combout\ $end
+$var wire 1 i \inst12|Add0~5_sumout\ $end
+$var wire 1 j \inst10|U4|salida[3]~0_combout\ $end
+$var wire 1 k \inst9|Mux4~1_combout\ $end
+$var wire 1 l \inst12|Add0~9_sumout\ $end
+$var wire 1 m \inst9|Mux5~0_combout\ $end
+$var wire 1 n \inst5|Add0~1_combout\ $end
+$var wire 1 o \inst10|U4|salida[2]~1_combout\ $end
+$var wire 1 p \inst9|Mux5~1_combout\ $end
+$var wire 1 q \inst12|Add0~13_sumout\ $end
+$var wire 1 r \inst9|Mux6~0_combout\ $end
+$var wire 1 s \inst10|U4|salida[1]~2_combout\ $end
+$var wire 1 t \inst9|Mux6~1_combout\ $end
+$var wire 1 u \inst9|Mux7~0_combout\ $end
+$var wire 1 v \inst42|salida[0]~1_combout\ $end
+$var wire 1 w \inst42|salida[0]~0_combout\ $end
+$var wire 1 x \inst9|Mux7~1_combout\ $end
+$var wire 1 y \ALT_INV_B[0]~input_o\ $end
+$var wire 1 z \ALT_INV_A[0]~input_o\ $end
+$var wire 1 { \ALT_INV_B[3]~input_o\ $end
+$var wire 1 | \ALT_INV_B[1]~input_o\ $end
+$var wire 1 } \ALT_INV_B[2]~input_o\ $end
+$var wire 1 ~ \ALT_INV_RS[0]~input_o\ $end
+$var wire 1 !! \ALT_INV_RS[1]~input_o\ $end
+$var wire 1 "! \ALT_INV_A[1]~input_o\ $end
+$var wire 1 #! \ALT_INV_A[2]~input_o\ $end
+$var wire 1 $! \ALT_INV_A[3]~input_o\ $end
+$var wire 1 %! \inst28|sub|ALT_INV_84~combout\ $end
+$var wire 1 &! \inst28|sub|ALT_INV_88~0_combout\ $end
+$var wire 1 '! \inst9|ALT_INV_Mux7~0_combout\ $end
+$var wire 1 (! \inst42|ALT_INV_salida[0]~1_combout\ $end
+$var wire 1 )! \inst42|ALT_INV_salida[0]~0_combout\ $end
+$var wire 1 *! \inst10|U4|ALT_INV_salida[1]~2_combout\ $end
+$var wire 1 +! \inst9|ALT_INV_Mux6~0_combout\ $end
+$var wire 1 ,! \inst10|U4|ALT_INV_salida[2]~1_combout\ $end
+$var wire 1 -! \inst9|ALT_INV_Mux5~0_combout\ $end
+$var wire 1 .! \inst5|ALT_INV_Add0~1_combout\ $end
+$var wire 1 /! \inst10|U4|ALT_INV_salida[3]~0_combout\ $end
+$var wire 1 0! \inst9|ALT_INV_Mux4~0_combout\ $end
+$var wire 1 1! \inst5|ALT_INV_Add0~0_combout\ $end
+$var wire 1 2! \inst15|U1|ALT_INV_LessThan0~0_combout\ $end
+$var wire 1 3! \inst30|ALT_INV_31~0_combout\ $end
+$var wire 1 4! \inst9|ALT_INV_Mux1~0_combout\ $end
+$var wire 1 5! \inst10|ALT_INV_salida[4]~0_combout\ $end
+$var wire 1 6! \inst12|ALT_INV_Add0~17_sumout\ $end
+$var wire 1 7! \inst12|ALT_INV_Add0~13_sumout\ $end
+$var wire 1 8! \inst12|ALT_INV_Add0~9_sumout\ $end
+$var wire 1 9! \inst12|ALT_INV_Add0~5_sumout\ $end
+$var wire 1 :! \inst12|ALT_INV_Add0~1_sumout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+03
+14
+x5
+16
+17
+18
+19
+1:
+1;
+xN
+1O
+1P
+1Q
+1R
+0S
+0T
+0U
+0V
+1W
+0X
+1Y
+0Z
+0[
+0\
+1]
+1^
+1_
+1`
+0a
+1b
+1c
+0d
+0e
+0f
+0g
+0h
+1i
+0j
+0k
+0l
+1m
+0n
+1o
+1p
+0q
+0r
+0s
+1t
+1u
+0v
+1w
+1x
+1y
+1z
+0{
+0|
+1}
+1~
+1!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+1(!
+0)!
+1*!
+1+!
+0,!
+0-!
+1.!
+1/!
+10!
+11!
+12!
+13!
+14!
+05!
+16!
+17!
+18!
+09!
+0:!
+1!
+1"
+1#
+0$
+1%
+0&
+1'
+0(
+0)
+0*
+0<
+1=
+0>
+0?
+0@
+1A
+1B
+1C
+1D
+1E
+1F
+0G
+1H
+0I
+1J
+0K
+0L
+0M
+0+
+1,
+0-
+0.
+0/
+10
+11
+12
+$end
+#160000
+1*
+1M
+1S
+0~
+1U
+1f
+0t
+0u
+1'!
+04!
+0x
+0B
+1?
+0=
+01
+1.
+0,
+0C
+02
+#320000
+0*
+1)
+0M
+1L
+1T
+0S
+1~
+0!!
+#480000
+1*
+1M
+1S
+0~
+0f
+0?
+0.
+#640000
+0*
+0)
+0M
+0L
+0T
+0S
+1~
+1!!
+0U
+1t
+1u
+0'!
+14!
+1x
+1B
+1=
+11
+1,
+1C
+12
+#800000
+1*
+1M
+1S
+0~
+1U
+1f
+0t
+0u
+1'!
+04!
+0x
+0B
+1?
+0=
+01
+1.
+0,
+0C
+02
+#960000
+0*
+1)
+0M
+1L
+1T
+0S
+1~
+0!!
+#1000000
